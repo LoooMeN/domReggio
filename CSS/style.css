@@ -1,0 +1,121 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: open Sans;
+	font-weight: 600;
+	color: brown;
+}
+
+h2 {
+	color: brown;
+}
+
+body {
+	background-color: brown;
+	text-align: center;
+}
+
+.spacer {
+	height: 20px;
+}
+
+.main_wrapper {
+	text-align: center;
+	background-color: white;
+	width: 400px;
+	margin: auto;
+	padding: 30px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	margin: auto;
+	text-align: center;
+}
+
+.logo_wrapper {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 33% 33% 33%;
+	justify-content: center;
+	padding: 20px;
+}
+
+.button {
+	border: 2px solid brown;
+	padding: 2px;
+	background: none;
+	width: 100%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.button:hover {
+	border-color: black;
+	color: black;
+}
+
+select {
+	width: 100%;
+}
+
+li {
+	margin: 5px 0px;
+	font-size: 14px;
+	list-style-position: inside;
+}
+
+.form {
+	text-align: left;
+	margin-top: 20px;
+	border: 3px solid brown;
+	padding: 30px;
+}
+
+.grid-item {
+	display: inline-grid;
+	border: 3px solid brown;
+	height: 100px;
+	width: 100%;
+	align-items: center;
+}
+
+.grid-item:hover {
+	display: inline-grid;
+	border: 3px solid black;
+	color: black;
+	height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_wrapper {
+  	width: 90%;
+  }
+  * {
+  	font-size: 28px;
+  }
+  input, select {
+  	min-height: 70px;
+  	font-size: 42px;
+  	margin-top: 20px;
+  }
+  select {
+  	border: 3px solid brown;
+  }
+  p {
+  	font-size: 48px;
+  }
+  .grid {
+  	grid-template-columns: 100%;
+  }
+}

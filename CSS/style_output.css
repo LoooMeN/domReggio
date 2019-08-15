@@ -1,0 +1,155 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: open Sans;
+	font-weight: 400;
+	color: brown;
+	cursor: pointer;
+}
+
+.spacer {
+	height: 20px;
+}
+
+form {
+	border: 2px solid brown;
+	padding: 10px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+h3 {
+	color: black;
+}
+
+h3, h4 {
+	text-align: left;
+	margin-bottom: 3px;
+}
+
+.selector, .date, .submit {
+	width: 100%;
+	margin-bottom: 10px;
+	border: 2px solid brown;
+	background: none;
+	box-sizing: border-box;
+}
+
+.selector:hover, .date:hover, .submit:hover {
+	border-color: black;
+	color: black;
+}
+
+.main_container {
+	text-align: center;
+	background-color: white;
+	width: 400px;
+	margin: auto;
+	padding: 30px;
+}
+
+body {
+	text-align: center;
+	background-color: brown;
+	background-blend-mode: soft-light;
+}
+
+img {
+	margin: auto;
+	text-align: center;
+}
+
+.logo_wrapper {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-column-gap: 0px;
+	grid-template-columns: 30% 40% 30%;
+	justify-content: center;
+	align-content: start;
+	text-align: left;
+}
+
+.grid-item:nth-child(1), .grid-item:nth-child(2), .grid-item:nth-child(3) {
+	border-top: 1px solid brown;
+	margin-bottom: 10px;
+}
+
+.grid-item:nth-child(1) p, .grid-item:nth-child(2) p, .grid-item:nth-child(3) p  {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+}
+
+.grid-item:nth-child(4), .grid-item:nth-child(5), .grid-item:nth-child(6) {
+	border-top: 1px solid brown;
+}
+
+.grid-item {
+	display: inline-grid;
+	border: 1px solid brown;
+	border-top: none;
+	width: 100%;
+}
+
+a {
+	cursor: pointer;
+}
+
+p {
+	padding: 5px;
+	font-size: 14px;
+}
+
+.image {
+	width: 30%;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.cross {
+	width: 83%;
+}
+
+.delete {
+	background: none;
+	border: none;
+	text-decoration: underline;
+	background-image: url("https://previews.123rf.com/images/vectora/vectora1704/vectora170401047/75817847-red-cross-symbol-icon-as-delete-remove-fail-failure-or-incorrect-answer-icon.jpg");
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: rgba(0,0,0,0);
+}
+
+@media screen and (max-width: 1200px) {
+  .main_container {
+  	width: 90%;
+  }
+  * {
+  	font-size: 28px;
+  }
+  input, select {
+  	min-height: 70px;
+  	font-size: 42px;
+  	margin-top: 20px;
+  }
+  select {
+  	border: 3px solid brown;
+  }
+  p, h2 {
+  	font-size: 32px;
+  }
+  .grid {
+  	grid-template-columns: 30% 40% 30%;
+  }
+}
