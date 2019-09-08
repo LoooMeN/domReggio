@@ -31,7 +31,10 @@
 					echo "<option name='name' class='option' value='$value'>$value</option>";
 			}
 			echo "</select><br>";
-			echo '<input class="date" type="date" name="date"><br>';
+			echo "<h4>От</h4>";
+			echo '<input class="date" type="date" name="date1"><br>';
+			echo "<h4>До</h4>";
+			echo '<input class="date" type="date" name="date2"><br>';
 			?>
 			<input class="submit" type="submit" name="submit1" value="ПРИМЕНИТЬ">
 		</form>

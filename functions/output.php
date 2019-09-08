@@ -11,7 +11,8 @@ foreach ($new as $value) {
 		$valueNew[0] = trim($valueNew[0]);
 		$name = $_REQUEST['name'];
 		$name = trim($name);
-		$date = $_REQUEST['date'];
+		$date1 = $_REQUEST['date1'];
+		$date2 = $_REQUEST['date2'];
 		if ($index == 0)
 		{
 			echo "<div class='grid-item'><p>ДАТА</p></div>";
@@ -21,7 +22,7 @@ foreach ($new as $value) {
 		}
 		$y = 0;
 		foreach ($valueNew as $key) {
-			if ($name != "Все" && !$date){
+			if ($name != "Все" && !$date1){
 				if (!$_REQUEST['submit1']){
 					echo '<div class="grid-item"><p>' . $key . '</p></div>';
 					$y++;
@@ -31,18 +32,35 @@ foreach ($new as $value) {
 					$y++;
 				}
 			}
-			elseif($name == "Все" && $date)
+			elseif($name == "Все" && $date1)
 			{
-				if (strcmp($valueNew[0], $date) == 0){
-					echo '<div class="grid-item"><p>' . $key . '</p></div>';
-					$y++;
+				if ($valueNew[0] >= $date1){
+					if ($date2 && $valueNew[0] <= $date2)
+					{
+						echo '<div class="grid-item"><p>' . $key . '</p></div>';
+						$y++;
+					}
+					else if ($valueNew[0] == $date1)
+					{
+						echo '<div class="grid-item"><p>' . $key . '</p></div>';
+						$y++;
+					}
 				}
 			}
-			elseif($name != "Все" && $data)
+			elseif($name != "Все" && $date1)
 			{
-				if (strcmp($valueNew[1] , $name) == 0 && strcmp($valueNew[0], $date) == 0){
-					echo '<div class="grid-item"><p>' . $key . '</p></div>';
-					$y++;
+				if (strcmp($valueNew[1] , $name) == 0 && $valueNew[0] >= $date1) 
+				{
+					if ($date2 && $valueNew[0] <= $date2)
+					{
+						echo '<div class="grid-item"><p>' . $key . '</p></div>';
+						$y++;
+					}
+					else if ($valueNew[0] == $date1)
+					{
+						echo '<div class="grid-item"><p>' . $key . '</p></div>';
+						$y++;
+					}
 				}
 			}
 			else
