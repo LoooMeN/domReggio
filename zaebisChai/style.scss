@@ -85,7 +85,8 @@
                         border: none;
 
 
-                        &[type="text"] {
+                        &[type="text"],
+                        &[type="password"] {
                             cursor: default;
                             margin-top: 5px;
                             width: 100%;

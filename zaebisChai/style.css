@@ -149,7 +149,7 @@
   border: none;
 }
 
-#login .flex div form label input[type="text"] {
+#login .flex div form label input[type="text"], #login .flex div form label input[type="password"] {
   cursor: default;
   margin-top: 5px;
   width: 100%;
