@@ -71,15 +71,15 @@ a {
 }
 
 .fadeOut {
-  -webkit-animation: fadeOut 0.2s;
-          animation: fadeOut 0.2s;
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 0.2s;
-          animation: fadeIn 0.2s;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
