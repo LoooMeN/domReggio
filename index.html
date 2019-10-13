@@ -14,7 +14,7 @@
 <body>
 
     <section id="login">
-        <div class="flex fullHeight">
+        <div class="flex fullHeight fadeIn">
             <div>
                 <h2>Вход в систему</h2>
                 <form action="" method="POST">
@@ -28,5 +28,15 @@
     </section>
 
 </body>
+
+<!-- Волора, надеюсь ты это читаешь. Внизу пышная штука которая вызывает скрипт который меняет форму, но мне влом было верстать это из ебучаего опен сервера. В целмо логика такая: если страницу открыли из емейла сброса пароля то вызывается эта джсная вкусная штуковина. И внутри неё есть поле form.action, поменяй на что надо будет.-->
+
+<!-- <?php
+    $i_came_here_from_password_resetting_email = 1;
+
+    if ($i_came_here_from_password_resetting_email) {
+        echo "<script src='./zaebisChai/resetPassword.js'></script>";
+    }
+?> -->
 
 </html>
