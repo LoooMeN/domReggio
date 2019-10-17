@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+if (view()->exists('home'))
+{
+    Route::get('/', 'Home@show')->name('show');
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
+    integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="zaebisChai/style.css">
+    <title>ЛОГИН</title>
+</head>
+
+<body>
+
+    <section id="login">
+        <div class="flex fullHeight fadeIn">
+            <div>
+                <h2>Вход в систему</h2>
+                <form action="" method="POST">
+                    <label class="halfWidth underlineFromLeft"><input type="text" placeholder="Логин"></label>
+                    <label class="halfWidth underlineFromLeft"><input type="password" placeholder="Пароль"></label>
+                    <label><input type="submit" value="Войти"></label>
+                </form>
+                <a href="../..">Забыли пароль?</a>
+                <div class="test"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<!-- Волора, надеюсь ты это читаешь. Внизу пышная штука которая вызывает скрипт который меняет форму, но мне влом было верстать это из ебучаего опен сервера. В целмо логика такая: если страницу открыли из емейла сброса пароля то вызывается эта джсная вкусная штуковина. И внутри неё есть поле form.action, поменяй на что надо будет.-->
+
+<!-- <?php
+    $i_came_here_from_password_resetting_email = 1;
+
+    if ($i_came_here_from_password_resetting_email) {
+        echo "<script src='./zaebisChai/resetPassword.js'></script>";
+    }
+?> -->
+
+</html>

@@ -56,5 +56,6 @@ $response = $kernel->handle(
 );
 
 $response->send();
+var_dump($response);
 
 $kernel->terminate($request, $response);
