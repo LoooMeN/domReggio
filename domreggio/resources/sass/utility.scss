@@ -1,0 +1,32 @@
+@mixin myGrid($columns, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-gap: $gap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin myFlex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexRowLeft {
+    @include myFlex(row);
+    justify-content: left;
+}
+
+.flexRow {
+    @include myFlex(row);
+}
+
+.flexCol {
+    @include myFlex(column);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
